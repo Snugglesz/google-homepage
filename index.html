@@ -1,5 +1,31 @@
 <html>
     <style>
+        #page-container-1 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #page-container-2 {
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        #page-container-3 {
+            height: 60px;
+        }   
+        #page-container-4 {
+            min-height: 150px;
+            max-height: 290px;
+            height: calc(100% - 560px);
+        }
+        #page-container-5 {
+            min-height: 92px;
+        }
+        #page-container-6 {
+            max-height: 160px;
+        }
+        #page-container-7 {
+            flex-grow: 1;
+        }
         #top-link-container {
             display: flex;
             flex-direction: row;
@@ -23,13 +49,16 @@
             flex-grow: 1;
         }
         #images {
-
+            display: inline-block;
+            flex-grow: 1;
         }
         #apps {
-
+            display: inline-block;
+            flex-grow: 1;
         }
         #sign-in {
-
+            display: inline-block;
+            flex-grow: 1;
         }
         #bottom-link-container {
             display: flex;
@@ -65,53 +94,40 @@
         }
         .page-links {
             font-family: Arial, Helvetica, sans-serif;
-            color:grey;
-        }
-        .page-links:hover {
-            text-decoration: underline;
-        }
-        .apps-button {
-
-        }
-        .apps-button:hover {
-    
-        }
-        .sign-in-button {
-
-        }
-        .sign-in-button:hover{
-            
+            color:#222;
         }
         .search-bar {
-
-        }
-        .search-bar:hover {
 
         }
         .search-button {
 
         }
-        .search-button:hover {
-            
-        }
         .feeling-lucky {
-
-        }
-        .feeling-lucky:hover {
 
         }
 
     </style>
 <body>
-    <main>
-    <div id="top-link-container">
+    <main id="page-container-1">
+<div id="page-container-2 page-container-3 top-link-container">
         <div id="about" class="page-links">About</div>
         <div id="store" class="page-links">Store</div>
         <div id="gmail" class="page-links">Gmail</div>
+        <div id="images" class="page-links">Images</div>
+        <div id="apps-button" class="page-links">Apps</div>
+        <div id="sign-in"><button type="submit">Sign In</button>></div>
     </div>
+<div id="page-container-2 page-container-4 page-container-5">
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-    <div id="bottom-link-container">
+</div>
+<div id="page-container-2 page-container-5">
+    <div>search-bar</div>
+</div>
+<div id="page-container-2 page-container-7">margin
+</div>
+    <div id="page-container-2">bottom container
     </div>
+</div>
 </main>
 </body>
 </html>
