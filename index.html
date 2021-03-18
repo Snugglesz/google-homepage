@@ -1,34 +1,74 @@
 <html>
     <style>
+        #top-link-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 6px;
+        }
+        #about {
+            display: inline-block;
+            padding: 5px;
+            margin: 0 5px;
+            color: #222;
+        }
+        #store {
+            display: inline-block;
+            padding: 5px;
+            margin: 0 5px;
+            color: #222;
+        }
+        #gmail {
+            display: inline-block;
+            flex-grow: 1;
+        }
+        #images {
+
+        }
+        #apps {
+
+        }
+        #sign-in {
+
+        }
+        #bottom-link-container {
+            display: flex;
+            height: auto;
+            background-color: rgb(173, 173, 173);
+        }
+        #carbon-neutral {
+
+        }
+        #advert {
+
+        }
+        #business {
+
+        }
+        #how-search {
+
+        }
+        #privacy {
+
+        }
+        #terms {
+
+        }
+        #settings {
+
+        }
         .logo {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 30%;
         }
-        .about-link {
-
+        .page-links {
+            font-family: Arial, Helvetica, sans-serif;
+            color:grey;
         }
-        .about-link:hover {
-
-        }
-        .store-link {
-
-        }        
-        .store-link:hover {
-
-        }        
-        .gmail-link {
-
-        }        
-        .gmail-link:hover {
-
-        }        
-        .images-link {
-
-        }
-        .images-link:hover {
-
+        .page-links:hover {
+            text-decoration: underline;
         }
         .apps-button {
 
@@ -41,6 +81,9 @@
         }
         .sign-in-button:hover{
             
+        }
+        .search-bar {
+
         }
         .search-bar:hover {
 
@@ -61,10 +104,14 @@
     </style>
 <body>
     <main>
+    <div id="top-link-container">
+        <div id="about" class="page-links">About</div>
+        <div id="store" class="page-links">Store</div>
+        <div id="gmail" class="page-links">Gmail</div>
+    </div>
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-<div>
-
-</div>
+    <div id="bottom-link-container">
+    </div>
 </main>
 </body>
 </html>
