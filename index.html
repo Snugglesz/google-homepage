@@ -20,15 +20,23 @@
         }
         #gmail {
             display: inline-block;
-            flex-grow: 1;
+            padding-left: 60%;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0 5px;
+            color: #222;
         }
         #images {
             display: inline-block;
-            flex-grow: 1;
+            padding: 5px;
+            margin: 0 5px;
+            color: #222;
         }
         #apps {
             display: inline-block;
-            flex-grow: 1;
+            padding: 5px;
+            margin: 0 5px;
         }
         #sign-in {
             display: inline-block;
@@ -41,16 +49,13 @@
             color: white;
             text-align: center;
             font-size: 14px;
-            padding: 8px 12px;
+            padding: 5px 12px;
             border-radius: 2px;
         }
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-        }
-        #carbon-neutral {
-
         }
         .logo {
             display: block;
@@ -72,26 +77,41 @@
         .feeling-lucky {
 
         }
+        article {
+            height: 100%;
+            width: 100%;
+        }
         .footer{
             background-color: rgb(167, 167, 167);
             position: absolute;
             bottom: 0;
             width: 100%;
-            padding-top: 32px;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
         li {
             display: inline-block;
+        }
+        #search-bar-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: center;
         }
     </style>
 <body>
 <header>
     <div id="about" class="page-links">About</div>
     <div id="store" class="page-links">Store</div>
+    <div id="gmail" class="page-links">Gmail</div>
+    <div id="images" class="page-links">Images</div>
+    <div id="apps"><img src="https://www.flaticon.com/svg/vstatic/svg/60/60991.svg?token=exp=1616194178~hmac=f26ccec7b35584b4a573b3d04b7bbd70" width="16px" height="16px" alt="Apps Button"></div>
     <div id="sign-in"><button id="button" type="submit"><b>Sign In</b></button></div>
+    <nav>
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </nav>
 </header>
-<nav>
-    <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-</nav>
+<div id="search-bar-container"></div>
 <footer class="footer">
     <ul class="page-links">
         <li style="float: left">Advertising</li>
