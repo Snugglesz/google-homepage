@@ -1,31 +1,5 @@
-<html>
+<html lang="en">
     <style>
-        #page-container-1 {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        #page-container-2 {
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-        #page-container-3 {
-            height: 60px;
-        }   
-        #page-container-4 {
-            min-height: 150px;
-            max-height: 290px;
-            height: calc(100% - 560px);
-        }
-        #page-container-5 {
-            min-height: 92px;
-        }
-        #page-container-6 {
-            max-height: 160px;
-        }
-        #page-container-7 {
-            flex-grow: 1;
-        }
         #top-link-container {
             display: flex;
             flex-direction: row;
@@ -58,32 +32,24 @@
         }
         #sign-in {
             display: inline-block;
-            flex-grow: 1;
+            position: absolute;
+            right: 0;
         }
-        #bottom-link-container {
-            display: flex;
-            height: auto;
-            background-color: rgb(173, 173, 173);
+        #button {
+            background-color: rgb(67, 67, 238);
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 2px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
         #carbon-neutral {
-
-        }
-        #advert {
-
-        }
-        #business {
-
-        }
-        #how-search {
-
-        }
-        #privacy {
-
-        }
-        #terms {
-
-        }
-        #settings {
 
         }
         .logo {
@@ -91,6 +57,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 30%;
+            padding-top: 100px;
         }
         .page-links {
             font-family: Arial, Helvetica, sans-serif;
@@ -105,29 +72,35 @@
         .feeling-lucky {
 
         }
-
+        .footer{
+            background-color: rgb(167, 167, 167);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-top: 32px;
+        }
+        li {
+            display: inline-block;
+        }
     </style>
 <body>
-    <main id="page-container-1">
-<div id="page-container-2 page-container-3 top-link-container">
-        <div id="about" class="page-links">About</div>
-        <div id="store" class="page-links">Store</div>
-        <div id="gmail" class="page-links">Gmail</div>
-        <div id="images" class="page-links">Images</div>
-        <div id="apps-button" class="page-links">Apps</div>
-        <div id="sign-in"><button type="submit">Sign In</button>></div>
-    </div>
-<div id="page-container-2 page-container-4 page-container-5">
+<header>
+    <div id="about" class="page-links">About</div>
+    <div id="store" class="page-links">Store</div>
+    <div id="sign-in"><button id="button" type="submit"><b>Sign In</b></button></div>
+</header>
+<nav>
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-</div>
-<div id="page-container-2 page-container-5">
-    <div>search-bar</div>
-</div>
-<div id="page-container-2 page-container-7">margin
-</div>
-    <div id="page-container-2">bottom container
-    </div>
-</div>
-</main>
+</nav>
+<footer class="footer">
+    <ul class="page-links">
+        <li style="float: left">Advertising</li>
+        <li style="padding-left: 16px; padding-right: 8px">Business</li>
+        <li style="padding-left: 8px; padding-right: 20%">How Search works</li>
+        <li style="padding-left: 25%; padding-right: 8px">Privacy</li>
+        <li style="padding-left: 8px; padding-right: 16px">Terms</li>
+        <li style="float: right">Settings</li>
+    </ul>
+</footer>
 </body>
 </html>
