@@ -63,19 +63,11 @@
             margin-right: auto;
             width: 30%;
             padding-top: 100px;
+            padding-bottom: 16px;
         }
         .page-links {
             font-family: Arial, Helvetica, sans-serif;
             color:#222;
-        }
-        .search-bar {
-
-        }
-        .search-button {
-
-        }
-        .feeling-lucky {
-
         }
         article {
             height: 100%;
@@ -98,6 +90,29 @@
             flex-grow: 1;
             align-items: center;
         }
+        #bar {
+            margin: 0 auto;
+            width: 550px;
+            border-radius: 30px;
+            border: 1px solid #dcdcdc;
+        }
+        .search-bar {
+            height: 45px;
+            border: none;
+            width: 500px;
+            font-size: 16px;
+            outline: none;
+        }
+        .voice {
+            height: 20px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        .search-buttons {
+            width: 100%;
+            align-items: center;
+        }
     </style>
 <body>
 <header>
@@ -105,13 +120,16 @@
     <div id="store" class="page-links">Store</div>
     <div id="gmail" class="page-links">Gmail</div>
     <div id="images" class="page-links">Images</div>
-    <div id="apps"><img src="https://www.flaticon.com/svg/vstatic/svg/60/60991.svg?token=exp=1616194178~hmac=f26ccec7b35584b4a573b3d04b7bbd70" width="16px" height="16px" alt="Apps Button"></div>
+    <div id="apps"><img src="https://icon-library.net/images/google-apps-icon-png/google-apps-icon-png-28.jpg" width="16px" height="16px" alt="Apps Button"></div>
     <div id="sign-in"><button id="button" type="submit"><b>Sign In</b></button></div>
     <nav>
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
     </nav>
 </header>
-<div id="search-bar-container"></div>
+<div id="search-bar-container">
+    <div id="bar"><input class="search-bar"><img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"></div>
+    <div class="test-2"></div>
+</div>
 <footer class="footer">
     <ul class="page-links">
         <li style="float: left">Advertising</li>
